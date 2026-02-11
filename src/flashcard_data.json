@@ -1,0 +1,252 @@
+[
+	{
+		"Acronym": "CPU",
+		"Definition": "Central Processing Unit",
+		"Hint": "The primary chip that executes instructions."
+	},
+	{
+		"Acronym": "RAM",
+		"Definition": "Random Access Memory",
+		"Hint": "Short-term, volatile data storage."
+	},
+	{
+		"Acronym": "GPU",
+		"Definition": "Graphics Processing Unit",
+		"Hint": "Handles visual rendering and video output."
+	},
+	{
+		"Acronym": "BIOS",
+		"Definition": "Basic Input/Output System",
+		"Hint": "Legacy firmware that initializes hardware at startup."
+	},
+	{
+		"Acronym": "UEFI",
+		"Definition": "Unified Extensible Firmware Interface",
+		"Hint": "Modern software interface for pre-boot environment."
+	},
+	{
+		"Acronym": "SATA",
+		"Definition": "Serial Advanced Technology Attachment",
+		"Hint": "Standard physical link for connecting internal drives."
+	},
+	{
+		"Acronym": "PCIe",
+		"Definition": "Peripheral Component Interconnect Express",
+		"Hint": "High-speed bus used for expansion cards."
+	},
+	{
+		"Acronym": "PSU",
+		"Definition": "Power Supply Unit",
+		"Hint": "Converts wall current to low-voltage internal energy."
+	},
+	{
+		"Acronym": "SSD",
+		"Definition": "Solid-State Drive",
+		"Hint": "Storage using flash memory with no moving parts."
+	},
+	{
+		"Acronym": "HDD",
+		"Definition": "Hard Disk Drive",
+		"Hint": "Storage utilizing spinning magnetic platters."
+	},
+	{
+		"Acronym": "RAID",
+		"Definition": "Redundant Array of Independent Disks",
+		"Hint": "Grouping physical drives for data safety or speed."
+	},
+	{
+		"Acronym": "TCP",
+		"Definition": "Transmission Control Protocol",
+		"Hint": "Reliable, connection-oriented data delivery."
+	},
+	{
+		"Acronym": "UDP",
+		"Definition": "User Datagram Protocol",
+		"Hint": "Fast, connectionless data delivery."
+	},
+	{
+		"Acronym": "IP",
+		"Definition": "Internet Protocol",
+		"Hint": "Logic for moving packets between locations."
+	},
+	{
+		"Acronym": "DHCP",
+		"Definition": "Dynamic Host Configuration Protocol",
+		"Hint": "Automatically assigns addressing details to clients."
+	},
+	{
+		"Acronym": "DNS",
+		"Definition": "Domain Name System",
+		"Hint": "Converts human-friendly names into numeric addresses."
+	},
+	{
+		"Acronym": "HTTP",
+		"Definition": "HyperText Transfer Protocol",
+		"Hint": "Base method for viewing web resources."
+	},
+	{
+		"Acronym": "HTTPS",
+		"Definition": "HyperText Transfer Protocol Secure",
+		"Hint": "Encrypted method for viewing web resources."
+	},
+	{
+		"Acronym": "FTP",
+		"Definition": "File Transfer Protocol",
+		"Hint": "Standard way to move files between systems."
+	},
+	{
+		"Acronym": "SSH",
+		"Definition": "Secure Shell",
+		"Hint": "Encrypted remote command-line access."
+	},
+	{
+		"Acronym": "SMTP",
+		"Definition": "Simple Mail Transfer Protocol",
+		"Hint": "Used to send or relay electronic messages."
+	},
+	{
+		"Acronym": "POP3",
+		"Definition": "Post Office Protocol version 3",
+		"Hint": "Downloads electronic messages to a local mailbox."
+	},
+	{
+		"Acronym": "IMAP",
+		"Definition": "Internet Mail Access Protocol",
+		"Hint": "Manages electronic messages directly on a server."
+	},
+	{
+		"Acronym": "SNMP",
+		"Definition": "Simple Network Management Protocol",
+		"Hint": "Monitors and manages hardware device status."
+	},
+	{
+		"Acronym": "LDAP",
+		"Definition": "Lightweight Directory Access Protocol",
+		"Hint": "Queries a database of users and assets."
+	},
+	{
+		"Acronym": "RDP",
+		"Definition": "Remote Desktop Protocol",
+		"Hint": "Accesses a graphical workspace from another location."
+	},
+	{
+		"Acronym": "SMB",
+		"Definition": "Server Message Block",
+		"Hint": "Main way Windows shares files and printers."
+	},
+	{
+		"Acronym": "SOHO",
+		"Definition": "Small Office/Home Office",
+		"Hint": "Environment typical for residential or tiny businesses."
+	},
+	{
+		"Acronym": "LAN",
+		"Definition": "Local Area Network",
+		"Hint": "Systems connected within a single geographic site."
+	},
+	{
+		"Acronym": "WAN",
+		"Definition": "Wide Area Network",
+		"Hint": "Systems connected across multiple geographic sites."
+	},
+	{
+		"Acronym": "VPN",
+		"Definition": "Virtual Private Network",
+		"Hint": "Secure tunnel through an unsecure environment."
+	},
+	{
+		"Acronym": "PoE",
+		"Definition": "Power over Ethernet",
+		"Hint": "Delivers current through data cables."
+	},
+	{
+		"Acronym": "SSID",
+		"Definition": "Service Set Identifier",
+		"Hint": "The name assigned to a wireless broadcast."
+	},
+	{
+		"Acronym": "NIC",
+		"Definition": "Network Interface Card",
+		"Hint": "The physical port or chip used to link to a web."
+	},
+	{
+		"Acronym": "MAC",
+		"Definition": "Media Access Control",
+		"Hint": "Unique physical address of a hardware link."
+	},
+	{
+		"Acronym": "AP",
+		"Definition": "Access Point",
+		"Hint": "Hardware that bridges radios to a cabled backbone."
+	},
+	{
+		"Acronym": "NFC",
+		"Definition": "Near Field Communication",
+		"Hint": "Very short-range link for payments or pairing."
+	},
+	{
+		"Acronym": "RFID",
+		"Definition": "Radio Frequency Identification",
+		"Hint": "Uses tags to track objects or people."
+	},
+	{
+		"Acronym": "SaaS",
+		"Definition": "Software as a Service",
+		"Hint": "Subscribing to an app hosted on the web."
+	},
+	{
+		"Acronym": "IaaS",
+		"Definition": "Infrastructure as a Service",
+		"Hint": "Leasing raw virtual hardware in the web."
+	},
+	{
+		"Acronym": "PaaS",
+		"Definition": "Platform as a Service",
+		"Hint": "Environment for builders to create apps without managing servers."
+	},
+	{
+		"Acronym": "VM",
+		"Definition": "Virtual Machine",
+		"Hint": "A software-simulated computer system."
+	},
+	{
+		"Acronym": "VDI",
+		"Definition": "Virtual Desktop Infrastructure",
+		"Hint": "Hosting client workspaces on a central server."
+	},
+	{
+		"Acronym": "TPM",
+		"Definition": "Trusted Platform Module",
+		"Hint": "Dedicated chip for hardware-based security keys."
+	},
+	{
+		"Acronym": "ESD",
+		"Definition": "Electrostatic Discharge",
+		"Hint": "Sudden flow of electricity between two objects."
+	},
+	{
+		"Acronym": "UAC",
+		"Definition": "User Account Control",
+		"Hint": "Windows prompt for permission before running as an owner."
+	},
+	{
+		"Acronym": "IDS",
+		"Definition": "Intrusion Detection System",
+		"Hint": "Monitors traffic for malicious patterns."
+	},
+	{
+		"Acronym": "IPS",
+		"Definition": "Intrusion Prevention System",
+		"Hint": "Actively blocks detected malicious traffic."
+	},
+	{
+		"Acronym": "UTM",
+		"Definition": "Unified Threat Management",
+		"Hint": "Single device combining multiple security functions."
+	},
+	{
+		"Acronym": "BSOD",
+		"Definition": "Blue Screen of Death",
+		"Hint": "Stop error screen on a crashed system."
+	}
+]

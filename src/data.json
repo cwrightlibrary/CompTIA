@@ -1,134 +1,306 @@
-[
-	{
-		"port_number": 20,
-		"protocol_name": "FTP (Data Connection)",
-		"default_transport": "TCP",
-		"description": "Used to transfer files across a network in active mode."
-	},
-	{
-		"port_number": 21,
-		"protocol_name": "FTP (Control Connection)",
-		"default_transport": "TCP",
-		"description": "Used to establish a connection and send commands for file transfers."
-	},
-	{
-		"port_number": 22,
-		"protocol_name": "SSH",
-		"default_transport": "TCP",
-		"description": "Provides secure, encrypted remote access to the command-line interface of a host."
-	},
-	{
-		"port_number": 23,
-		"protocol_name": "Telnet",
-		"default_transport": "TCP",
-		"description": "Provides unsecure, unencrypted remote access to the command-line interface of a host."
-	},
-	{
-		"port_number": 25,
-		"protocol_name": "SMTP",
-		"default_transport": "TCP",
-		"description": "Used for unsecure message relay between Simple Mail Transfer Protocol servers."
-	},
-	{
-		"port_number": 53,
-		"protocol_name": "DNS",
-		"default_transport": "TCP/UDP",
-		"description": "Resolves friendly host names and fully qualified domain names to IP addresses."
-	},
-	{
-		"port_number": 67,
-		"protocol_name": "DHCP (Server)",
-		"default_transport": "UDP",
-		"description": "Used by a server to provision IP address configurations and options to clients."
-	},
-	{
-		"port_number": 68,
-		"protocol_name": "DHCP (Client)",
-		"default_transport": "UDP",
-		"description": "Used by a client to request a dynamic IP address configuration from a DHCP server."
-	},
-	{
-		"port_number": 80,
-		"protocol_name": "HTTP",
-		"default_transport": "TCP",
-		"description": "Enables clients to request and receive unsecure web pages and resources."
-	},
-	{
-		"port_number": 110,
-		"protocol_name": "POP3",
-		"default_transport": "TCP",
-		"description": "An early mailbox access protocol used to retrieve email by downloading it to a local device."
-	},
-	{
-		"port_number": 137,
-		"protocol_name": "NetBIOS Name Service",
-		"default_transport": "UDP",
-		"description": "Legacy Windows protocol used for name resolution over a local network."
-	},
-	{
-		"port_number": 139,
-		"protocol_name": "NetBIOS Session Service",
-		"default_transport": "TCP",
-		"description": "Legacy Windows protocol used to establish sessions for services like file sharing."
-	},
-	{
-		"port_number": 143,
-		"protocol_name": "IMAP",
-		"default_transport": "TCP",
-		"description": "A mailbox access protocol that supports permanent connections and managing mail on the server."
-	},
-	{
-		"port_number": 161,
-		"protocol_name": "SNMP",
-		"default_transport": "UDP",
-		"description": "Used by management systems to query status information from network device agents."
-	},
-	{
-		"port_number": 162,
-		"protocol_name": "SNMP Trap",
-		"default_transport": "UDP",
-		"description": "Used by network device agents to report notable events or alerts to a management system."
-	},
-	{
-		"port_number": 389,
-		"protocol_name": "LDAP",
-		"default_transport": "TCP/UDP",
-		"description": "Used to query and update a centralized X.500-based directory of network users and resources."
-	},
-	{
-		"port_number": 443,
-		"protocol_name": "HTTPS",
-		"default_transport": "TCP",
-		"description": "Uses TLS/SSL to provide secure, encrypted access to websites and web services."
-	},
-	{
-		"port_number": 445,
-		"protocol_name": "SMB (CIFS)",
-		"default_transport": "TCP",
-		"description": "Supports file and printer sharing on Windows networks, often called CIFS."
-	},
-	{
-		"port_number": 587,
-		"protocol_name": "SMTP (Secure)",
-		"default_transport": "TCP",
-		"description": "Modern secure port used by mail clients to submit messages for delivery using encryption."
-	},
-	{
-		"port_number": 993,
-		"protocol_name": "IMAPS",
-		"default_transport": "TCP",
-		"description": "Secure version of IMAP that uses TLS to encrypt mail retrieval and management."
-	},
-	{
-		"port_number": 995,
-		"protocol_name": "POP3S",
-		"default_transport": "TCP",
-		"description": "Secure version of POP3 that uses TLS to encrypt the retrieval of email messages."
-	},
-	{
-		"port_number": 3389,
-		"protocol_name": "RDP",
-		"default_transport": "TCP",
-		"description": "Microsoft protocol for secure remote graphical desktop connections."
-	}
-]
+{
+	"ports_protocols": [
+		{
+			"port_number": 20,
+			"protocol_name": "FTP (Data Connection)",
+			"default_transport": "TCP",
+			"description": "Used to transfer files across a network in active mode."
+		},
+		{
+			"port_number": 21,
+			"protocol_name": "FTP (Control Connection)",
+			"default_transport": "TCP",
+			"description": "Used to establish a connection and send commands for file transfers."
+		},
+		{
+			"port_number": 22,
+			"protocol_name": "SSH",
+			"default_transport": "TCP",
+			"description": "Provides secure, encrypted remote access to the command-line interface of a host."
+		},
+		{
+			"port_number": 23,
+			"protocol_name": "Telnet",
+			"default_transport": "TCP",
+			"description": "Provides unsecure, unencrypted remote access to the command-line interface of a host."
+		},
+		{
+			"port_number": 25,
+			"protocol_name": "SMTP",
+			"default_transport": "TCP",
+			"description": "Used for unsecure message relay between Simple Mail Transfer Protocol servers."
+		},
+		{
+			"port_number": 53,
+			"protocol_name": "DNS",
+			"default_transport": "TCP/UDP",
+			"description": "Resolves friendly host names and fully qualified domain names to IP addresses."
+		},
+		{
+			"port_number": 67,
+			"protocol_name": "DHCP (Server)",
+			"default_transport": "UDP",
+			"description": "Used by a server to provision IP address configurations and options to clients."
+		},
+		{
+			"port_number": 68,
+			"protocol_name": "DHCP (Client)",
+			"default_transport": "UDP",
+			"description": "Used by a client to request a dynamic IP address configuration from a DHCP server."
+		},
+		{
+			"port_number": 80,
+			"protocol_name": "HTTP",
+			"default_transport": "TCP",
+			"description": "Enables clients to request and receive unsecure web pages and resources."
+		},
+		{
+			"port_number": 110,
+			"protocol_name": "POP3",
+			"default_transport": "TCP",
+			"description": "An early mailbox access protocol used to retrieve email by downloading it to a local device."
+		},
+		{
+			"port_number": 137,
+			"protocol_name": "NetBIOS Name Service",
+			"default_transport": "UDP",
+			"description": "Legacy Windows protocol used for name resolution over a local network."
+		},
+		{
+			"port_number": 139,
+			"protocol_name": "NetBIOS Session Service",
+			"default_transport": "TCP",
+			"description": "Legacy Windows protocol used to establish sessions for services like file sharing."
+		},
+		{
+			"port_number": 143,
+			"protocol_name": "IMAP",
+			"default_transport": "TCP",
+			"description": "A mailbox access protocol that supports permanent connections and managing mail on the server."
+		},
+		{
+			"port_number": 161,
+			"protocol_name": "SNMP",
+			"default_transport": "UDP",
+			"description": "Used by management systems to query status information from network device agents."
+		},
+		{
+			"port_number": 162,
+			"protocol_name": "SNMP Trap",
+			"default_transport": "UDP",
+			"description": "Used by network device agents to report notable events or alerts to a management system."
+		},
+		{
+			"port_number": 389,
+			"protocol_name": "LDAP",
+			"default_transport": "TCP/UDP",
+			"description": "Used to query and update a centralized X.500-based directory of network users and resources."
+		},
+		{
+			"port_number": 443,
+			"protocol_name": "HTTPS",
+			"default_transport": "TCP",
+			"description": "Uses TLS/SSL to provide secure, encrypted access to websites and web services."
+		},
+		{
+			"port_number": 445,
+			"protocol_name": "SMB (CIFS)",
+			"default_transport": "TCP",
+			"description": "Supports file and printer sharing on Windows networks, often called CIFS."
+		},
+		{
+			"port_number": 587,
+			"protocol_name": "SMTP (Secure)",
+			"default_transport": "TCP",
+			"description": "Modern secure port used by mail clients to submit messages for delivery using encryption."
+		},
+		{
+			"port_number": 993,
+			"protocol_name": "IMAPS",
+			"default_transport": "TCP",
+			"description": "Secure version of IMAP that uses TLS to encrypt mail retrieval and management."
+		},
+		{
+			"port_number": 995,
+			"protocol_name": "POP3S",
+			"default_transport": "TCP",
+			"description": "Secure version of POP3 that uses TLS to encrypt the retrieval of email messages."
+		},
+		{
+			"port_number": 3389,
+			"protocol_name": "RDP",
+			"default_transport": "TCP",
+			"description": "Microsoft protocol for secure remote graphical desktop connections."
+		}
+	],
+	"command_line": [
+		{
+			"command": "ipconfig",
+			"utility": "Network Troubleshooting",
+			"common_switch": "/all",
+			"scenario": "Used to display detailed TCP/IP configuration information, including DHCP and DNS server addresses and the MAC address."
+		},
+		{
+			"command": "ping",
+			"utility": "Network Troubleshooting",
+			"common_switch": "127.0.0.1",
+			"scenario": "Used to test connectivity to another host or verify that the local TCP/IP stack is installed correctly by pinging the loopback address."
+		},
+		{
+			"command": "tracert",
+			"utility": "Network Troubleshooting",
+			"common_switch": "N/A",
+			"scenario": "Used to trace the route a packet takes to a destination, identifying every router (hop) and measuring latency at each point."
+		},
+		{
+			"command": "pathping",
+			"utility": "Network Troubleshooting",
+			"common_switch": "N/A",
+			"scenario": "A more advanced version of tracert that pings each hop over a period to measure link latency and packet loss more accurately."
+		},
+		{
+			"command": "hostname",
+			"utility": "Network Identification",
+			"common_switch": "N/A",
+			"scenario": "Returns the specific name configured for the local computer, which is necessary for clients to access its shared resources."
+		},
+		{
+			"command": "netstat",
+			"utility": "Network Troubleshooting",
+			"common_switch": "-abo",
+			"scenario": "Used to view active network connections and the specific software processes or applications associated with them."
+		},
+		{
+			"command": "nslookup",
+			"utility": "Network Troubleshooting",
+			"common_switch": "N/A",
+			"scenario": "Operates in an interactive mode to troubleshoot and verify DNS name resolution records."
+		},
+		{
+			"command": "dir",
+			"utility": "File Management",
+			"common_switch": "/p",
+			"scenario": "Lists the files and subdirectories in the current directory, with /p used to display results page by page."
+		},
+		{
+			"command": "cd",
+			"utility": "File Management",
+			"common_switch": "..",
+			"scenario": "Used to change the current working directory; 'cd ..' moves the focus up one level to the parent directory."
+		},
+		{
+			"command": "copy",
+			"utility": "File Management",
+			"common_switch": "N/A",
+			"scenario": "Used to transfer files from a source path to a destination path within a single directory."
+		},
+		{
+			"command": "xcopy",
+			"utility": "File Management",
+			"common_switch": "/s",
+			"scenario": "A legacy utility used to copy directory structures and their contents to another location."
+		},
+		{
+			"command": "robocopy",
+			"utility": "File Management",
+			"common_switch": "/mov",
+			"scenario": "The 'Robust Copy' tool recommended for modern scripting to move or copy files while preserving NTFS attributes and long filenames."
+		},
+		{
+			"command": "md",
+			"utility": "File Management",
+			"common_switch": "N/A",
+			"scenario": "Used to create a new directory at the specified path."
+		},
+		{
+			"command": "rd",
+			"utility": "File Management",
+			"common_switch": "/s",
+			"scenario": "Used to remove a directory; the /s switch allows for the deletion of a directory that is not empty."
+		},
+		{
+			"command": "diskpart",
+			"utility": "Disk Management",
+			"common_switch": "select disk",
+			"scenario": "A command-line interface for managing disks, partitions, and volumes, often used when the GUI Disk Management tool is unavailable."
+		},
+		{
+			"command": "format",
+			"utility": "Disk Management",
+			"common_switch": "/fs:ntfs",
+			"scenario": "Writes a new file system to a drive, effectively deleting all existing data on that partition."
+		},
+		{
+			"command": "chkdsk",
+			"utility": "Disk Management",
+			"common_switch": "/f",
+			"scenario": "Scans the file system for errors and attempts to fix them; /r can additionally be used to recover data from bad sectors."
+		},
+		{
+			"command": "sfc",
+			"utility": "System File Management",
+			"common_switch": "/scannow",
+			"scenario": "The System File Checker verifies the integrity of protected Windows system files and restores them from cache if they are corrupt."
+		},
+		{
+			"command": "bootrec",
+			"utility": "Boot Troubleshooting",
+			"common_switch": "/rebuildbcd",
+			"scenario": "Used in the recovery environment to repair the Master Boot Record (MBR), boot sector, or the Boot Configuration Data (BCD) store."
+		},
+		{
+			"command": "shutdown",
+			"utility": "System Management",
+			"common_switch": "/r",
+			"scenario": "Safely halts the system or initiates a restart; /t can be used to specify a delay in seconds."
+		},
+		{
+			"command": "msconfig",
+			"utility": "System Configuration",
+			"common_switch": "N/A",
+			"scenario": "Used for diagnostic startups to troubleshoot which services or programs are causing boot issues."
+		},
+		{
+			"command": "regedit",
+			"utility": "System Management",
+			"common_switch": "N/A",
+			"scenario": "The Registry Editor allows technicians to view and manually edit the database of Windows configuration settings."
+		},
+		{
+			"command": "gpedit.msc",
+			"utility": "System Management",
+			"common_switch": "N/A",
+			"scenario": "The Group Policy Editor used to configure and enforce OS and application settings across a domain or local machine."
+		},
+		{
+			"command": "taskmgr",
+			"utility": "Resource Monitoring",
+			"common_switch": "N/A",
+			"scenario": "Used to monitor real-time resource utilization (CPU, RAM, Disk) and end unresponsive tasks or processes."
+		},
+		{
+			"command": "msinfo32",
+			"utility": "System Auditing",
+			"common_switch": "N/A",
+			"scenario": "Generates a comprehensive inventory of the system's hardware resources, software environment, and components."
+		},
+		{
+			"command": "winver",
+			"utility": "System Information",
+			"common_switch": "N/A",
+			"scenario": "A simple command to report the current Windows brand, version, and OS build number."
+		},
+		{
+			"command": "bcdedit",
+			"utility": "Boot Configuration",
+			"common_switch": "N/A",
+			"scenario": "Used to manually edit the Boot Configuration Data (BCD) store to add or modify boot paths."
+		},
+		{
+			"command": "regsvr32",
+			"utility": "System Management",
+			"common_switch": "N/A",
+			"scenario": "Used to re-register dynamic link library (DLL) components that a background service relies upon."
+		}
+	]
+}
