@@ -1,92 +1,116 @@
 from __future__ import annotations
 
+import time
+import typer
+
 from rich.console import Console
-from rich.panel import Panel
-from rich.prompt import Prompt
 from rich.table import Table
+from rich.panel import Panel
+from rich.text import Text
+from rich.progress import track
+from rich.prompt import Prompt
+
+app = typer.Typer()
 
 
-class ExampleApp:
+class CLIApp:
 	def __init__(self) -> None:
-		"""Initialize the console and app state."""
 		self.console = Console()
-		self.user_name = ""
-		self.hardware_data = [
-			{
-				"acronym": "CPU",
-				"def": "Central Processing Unit",
-				"hint": "The primary chip",
-			},
-			{
-				"acronym": "RAM",
-				"def": "Random Access Memory",
-				"hint": "Short-term storage",
-			},
-			{
-				"acronym": "SSD",
-				"def": "Solid-State Drive",
-				"hint": "Fast flash storage",
-			},
-			{
-				"acronym": "PSU",
-				"def": "Power Supply Unit",
-				"hint": "Voltage converter",
-			},
-		]
 
-	def display_welcome(self) -> None:
-		self.console.print(
-			Panel(
-				"[bold cyan]CompTIA A+ Tech Glossary Tool[/bold cyan]",
-				expand=False,
-				border_style="blue",
-			)
+	def print_banner(self) -> None:
+		banner_text = """
+    COMPTIA A+
+    PROTOCOL v1.0"""
+		panel = Panel(
+			Text(banner_text, justify="center", style="bold magenta"),
+			border_style="cyan",
+			title="[ SYSTEM READY ]",
+			subtitle="[ UNAUTHORIZED ACCESS PROHIBITED ]",
 		)
+		self.console.print(panel)
 
-	def get_user_info(self) -> None:
-		self.user_name = Prompt.ask(
-			"[bold green]Enter your name[/bold green]",
-			default="Technician",
-		)
-		self.console.print(
-			f"\n[italic]Welcome, {self.user_name}. Initializing diagnostics...[/italic]\n"
-		)
+	def fake_loader(self, task_name: str) -> None:
+		for _ in track(range(20), description=f"[green]{task_name}..."):
+			time.sleep(0.05)
 
-	def show_table(self) -> None:
-		table = Table(
-			title="System Components",
-			show_header=True,
-			header_style="bold magenta",
-			border_style="bright_black",
-		)
+	def run_status(self):
+		self.print_banner()
+		self.fake_loader("Scanning Network")
 
-		table.add_column("Acronym", style="cyan", width=12)
-		table.add_column("Definition", style="white")
-		table.add_column("Hint", justify="right", style="green")
+		table = Table(title="System Status", border_style="green")
+		table.add_column("Module", style="cyan", no_wrap=True)
+		table.add_column("Status", style="magenta")
+		table.add_column("Latency", justify="right", style="green")
 
-		for item in self.hardware_data:
-			table.add_row(item["acronym"], item["def"], item["hint"])
+		table.add_row("Core", "ONLINE", "12ms")
+		table.add_row("Database", "CONNECTED", "4ms")  # Fixed typo "Databae"
+		table.add_row("Security", "ACTIVE", "0ms")
 
 		self.console.print(table)
 
-	def run_diagnostics(self) -> None:
-		is_stable = Prompt.ask(
-			"Is the system stable?",
-			choices=["yes", "no"],
-			default="yes",
+	def run_connect(self, target: str) -> None:
+		self.print_banner()
+		self.console.print(
+			f"[bold yellow]Initiating handshake with {target}...[/bold yellow]"
 		)
 
-		if is_stable == "no":
-			self.console.print(
-				"\n[bold white on red] !!! CRITICAL ERROR: BSOD DETECTED !!! [/bold white on red]"
-			)
-		else:
-			self.console.print(
-				"\n[bold green]All systems nominal. Happy troubleshooting![/bold green]"
-			)
+		with self.console.status(
+			"[bold green]Authenticating keys...[/bold green]", spinner="dots"
+		):
+			time.sleep(2)
+			self.console.log("Keys verified.")
+			time.sleep(1)
+			self.console.log("Encryption established.")
 
-	def start(self) -> None:
-		self.display_welcome()
-		self.get_user_info()
-		self.show_table()
-		self.run_diagnostics()
+		self.console.print(
+			Panel(f"Connection to [bold]{target}[/bold] successful.", style="on green")
+		)
+
+	def run_interactive(self) -> None:
+		self.print_banner()
+		self.console.print("[dim]Type 'exit' to quit.[/dim]")
+
+		while True:
+			command = Prompt.ask(
+				"[bold cyan]admin@openclaw[/bold cyan] [bold white]>[/bold white]"
+			)
+			if command == "exit":
+				self.console.print("[red]Terminating session...[/red]")
+				break
+			elif command == "status":
+				self.run_status()
+			elif command == "help":
+				self.console.print(
+					"Available commands: status, connect, exit", style="yellow"
+				)
+			else:
+				self.console.print(
+					f"[red]Error:[/red] Command '{command}' not recognized."
+				)
+
+
+# 1. Instantiate the logic handler
+cli = CLIApp()
+
+
+# 2. Define the Typer commands as simple wrappers
+@app.command()
+def status():
+	"""Check system health."""
+	cli.run_status()
+
+
+@app.command()
+def connect(target: str = "127.0.0.1"):
+	"""Connect to a remote terminal."""
+	cli.run_connect(target)
+
+
+@app.command()
+def interactive():
+	"""Enter the persistent shell."""
+	cli.run_interactive()
+
+
+if __name__ == "__main__":
+	app()
