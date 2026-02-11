@@ -1,0 +1,134 @@
+[
+	{
+		"port_number": 20,
+		"protocol_name": "FTP (Data Connection)",
+		"default_transport": "TCP",
+		"description": "Used to transfer files across a network in active mode."
+	},
+	{
+		"port_number": 21,
+		"protocol_name": "FTP (Control Connection)",
+		"default_transport": "TCP",
+		"description": "Used to establish a connection and send commands for file transfers."
+	},
+	{
+		"port_number": 22,
+		"protocol_name": "SSH",
+		"default_transport": "TCP",
+		"description": "Provides secure, encrypted remote access to the command-line interface of a host."
+	},
+	{
+		"port_number": 23,
+		"protocol_name": "Telnet",
+		"default_transport": "TCP",
+		"description": "Provides unsecure, unencrypted remote access to the command-line interface of a host."
+	},
+	{
+		"port_number": 25,
+		"protocol_name": "SMTP",
+		"default_transport": "TCP",
+		"description": "Used for unsecure message relay between Simple Mail Transfer Protocol servers."
+	},
+	{
+		"port_number": 53,
+		"protocol_name": "DNS",
+		"default_transport": "TCP/UDP",
+		"description": "Resolves friendly host names and fully qualified domain names to IP addresses."
+	},
+	{
+		"port_number": 67,
+		"protocol_name": "DHCP (Server)",
+		"default_transport": "UDP",
+		"description": "Used by a server to provision IP address configurations and options to clients."
+	},
+	{
+		"port_number": 68,
+		"protocol_name": "DHCP (Client)",
+		"default_transport": "UDP",
+		"description": "Used by a client to request a dynamic IP address configuration from a DHCP server."
+	},
+	{
+		"port_number": 80,
+		"protocol_name": "HTTP",
+		"default_transport": "TCP",
+		"description": "Enables clients to request and receive unsecure web pages and resources."
+	},
+	{
+		"port_number": 110,
+		"protocol_name": "POP3",
+		"default_transport": "TCP",
+		"description": "An early mailbox access protocol used to retrieve email by downloading it to a local device."
+	},
+	{
+		"port_number": 137,
+		"protocol_name": "NetBIOS Name Service",
+		"default_transport": "UDP",
+		"description": "Legacy Windows protocol used for name resolution over a local network."
+	},
+	{
+		"port_number": 139,
+		"protocol_name": "NetBIOS Session Service",
+		"default_transport": "TCP",
+		"description": "Legacy Windows protocol used to establish sessions for services like file sharing."
+	},
+	{
+		"port_number": 143,
+		"protocol_name": "IMAP",
+		"default_transport": "TCP",
+		"description": "A mailbox access protocol that supports permanent connections and managing mail on the server."
+	},
+	{
+		"port_number": 161,
+		"protocol_name": "SNMP",
+		"default_transport": "UDP",
+		"description": "Used by management systems to query status information from network device agents."
+	},
+	{
+		"port_number": 162,
+		"protocol_name": "SNMP Trap",
+		"default_transport": "UDP",
+		"description": "Used by network device agents to report notable events or alerts to a management system."
+	},
+	{
+		"port_number": 389,
+		"protocol_name": "LDAP",
+		"default_transport": "TCP/UDP",
+		"description": "Used to query and update a centralized X.500-based directory of network users and resources."
+	},
+	{
+		"port_number": 443,
+		"protocol_name": "HTTPS",
+		"default_transport": "TCP",
+		"description": "Uses TLS/SSL to provide secure, encrypted access to websites and web services."
+	},
+	{
+		"port_number": 445,
+		"protocol_name": "SMB (CIFS)",
+		"default_transport": "TCP",
+		"description": "Supports file and printer sharing on Windows networks, often called CIFS."
+	},
+	{
+		"port_number": 587,
+		"protocol_name": "SMTP (Secure)",
+		"default_transport": "TCP",
+		"description": "Modern secure port used by mail clients to submit messages for delivery using encryption."
+	},
+	{
+		"port_number": 993,
+		"protocol_name": "IMAPS",
+		"default_transport": "TCP",
+		"description": "Secure version of IMAP that uses TLS to encrypt mail retrieval and management."
+	},
+	{
+		"port_number": 995,
+		"protocol_name": "POP3S",
+		"default_transport": "TCP",
+		"description": "Secure version of POP3 that uses TLS to encrypt the retrieval of email messages."
+	},
+	{
+		"port_number": 3389,
+		"protocol_name": "RDP",
+		"default_transport": "TCP",
+		"description": "Microsoft protocol for secure remote graphical desktop connections."
+	}
+]
