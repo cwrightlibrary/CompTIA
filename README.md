@@ -1,4 +1,4 @@
-# 💾 CompTIA
+# 📔 CompTIA
 
 Learning CompTIA for computer-science and IT-related job searching by using:
 
