@@ -1,5 +1,3 @@
-# 💾 Learning CompTIA A+
+# 💾 CompTIA
 
-Using the [Professor Messer CompTIA A+ YouTube playlist](https://www.youtube.com/playlist?list=PLG49S3nxzAnnOmvg5UGVenB_qQgsh01uC) to learn what I need to know.
-
-Read my [notes here](NOTES.md).
+Using the Core Series book [The Official CompTIA A+ Core 1 and Core 2 Study Guide (Exams 220-1101  220-1102)](#) and [NotebookLM](https://notebooklm.google.com/) for in-depth learning and notes.
